@@ -39,7 +39,7 @@ class mcache extends Memcache
 	}
 	
 	public function _inc($name,$val=null){
-		if($this->increment($name)===false&&isset($val['0'])){
+		if($this->increment($name)===false){
 			$num = isset($val['0'])?$val['0']:1;
 			$this->set($name,$num);
 		}
@@ -48,7 +48,7 @@ class mcache extends Memcache
 	}
 	
 	public function _dec($name,$val=null){
-		if($this->decrement($name)===false&&isset($val['0'])){
+		if($this->decrement($name)===false){
 			$num = isset($val['0'])?$val['0']:0;
 			$this->set($name,$num);
 		}
