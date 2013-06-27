@@ -56,7 +56,7 @@ class mcache extends Memcache
 		return $this->get($name);
 	}
 	
-	public function _Error($name,$val){
+	public function Error($name,$val){
 		$this->Fkey = false;
 		$Error = "Fatal error: ";
 		$Error .= "Call to undefined method ";
@@ -71,7 +71,7 @@ class mcache extends Memcache
 			$uname = substr($name,3);
 			$function = '_'.substr($name,0,3);
 			return $this->$function($uname,$val);
-		}else return $this->_Error($this->Fkey,$val);
+		}else return $this->Error($this->Fkey,$val);
 	}
 	
 	public static $_instance;
