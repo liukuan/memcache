@@ -50,8 +50,7 @@
 		return $this->get($name);
 	}
 		
-	public function _dow($name,$val=null){
-		$name = substr($name,1);
+	public function _low($name,$val=null){
 		$name = isset($val['0'])?$name.'_'.$val['0']:$name;
 		if($this->decrement($name)===false)$this->set($name,0);
 		return $this->get($name);
