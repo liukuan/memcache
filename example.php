@@ -7,6 +7,8 @@
   }else echo $content;
   //delete
   mcache::getInstance()->delFacebook();
+  //replace
+  mcache::getInstance()->repFacebook($data_str);
    
   //Settings page content
   $data = file_get_contents('http://www.facebook.com/?page=1');
