@@ -35,5 +35,5 @@
   echo mcache::getInstance()->incNum();
   //Num--
   echo mcache::getInstance()->decNum();
-  
+  echo mcache::getInstance()->getNum();
   
