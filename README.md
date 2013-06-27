@@ -4,6 +4,7 @@ memcache
 
 
 
+{
 
   include 'mcache.php';
   
@@ -15,3 +16,4 @@ memcache
     
   }else echo $content;
   
+}
