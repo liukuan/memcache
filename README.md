@@ -1,11 +1,5 @@
-memcache
+php memcache class 
 ========
-
-
-
-
-{
-
   include 'mcache.php';
   
   if(!$content = mcache::getInstance()->getFacebook()){
@@ -16,4 +10,3 @@ memcache
     
   }else echo $content;
   
-}
