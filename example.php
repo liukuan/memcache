@@ -29,3 +29,11 @@
 
   $google = file_get_contents('http://www.google.com/');
   echo mcache::getInstance()->setGoogle($google)->getGoogle();
+
+
+  //Num++
+  echo mcache::getInstance()->incNum();
+  //Num--
+  echo mcache::getInstance()->decNum();
+  
+  
