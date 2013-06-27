@@ -5,7 +5,8 @@
   if(!$content = mcache::getInstance()->getFacebook()){
     $data = file_get_contents('http://www.facebook.com/');
     //set content
-    mcache::getInstance()->setFacebook($data);
+    mcache::getInstance()->setFacebook($data);//->getFacebook();
+    echo mcache::getInstance()->getFacebook();
   }else echo $content;
   //delete
   mcache::getInstance()->delFacebook();
