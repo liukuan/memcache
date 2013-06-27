@@ -44,14 +44,18 @@
 	}
 	
 	public function _inc($name,$val=null){
-		$name = isset($val['0'])?$name.'_'.$val['0']:$name;
-		if(!$this->increment($name))$this->set($name,1);
+		if($this->increment($name)===false&&isset($val['0'])){
+			$num = isset($val['0'])?$val['0']:1;
+			$this->set($name,$num);
+		}
 		return $this->get($name);
 	}
 		
 	public function _dec($name,$val=null){
-		$name = isset($val['0'])?$name.'_'.$val['0']:$name;
-		if($this->decrement($name)===false)$this->set($name,0);
+		if($this->decrement($name)===false&&isset($val['0'])){
+			$num = isset($val['0'])?$val['0']:0;
+			$this->set($name,$num);
+		}
 		return $this->get($name);
 	}
 	
