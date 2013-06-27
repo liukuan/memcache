@@ -26,7 +26,6 @@
   mcache::getInstance()->delFacebook(1);
   
   echo mcache::getInstance()->getFacebook(1);
-  
 
   $google = file_get_contents('http://www.google.com/');
   echo mcache::getInstance()->setGoogle($google)->getGoogle();
