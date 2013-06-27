@@ -8,10 +8,10 @@
     mcache::getInstance()->setFacebook($data);//->getFacebook();
     echo mcache::getInstance()->getFacebook();
   }else echo $content;
-  //delete
-  mcache::getInstance()->delFacebook();
   //replace
   mcache::getInstance()->repFacebook($data_str);
+  //delete
+  mcache::getInstance()->delFacebook();
    
   //Settings page content
   $data = file_get_contents('http://www.facebook.com/?page=1');
