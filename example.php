@@ -39,3 +39,6 @@
   
   //int++ Starting from 100
   echo mcache::getInstance()->incInt(100);
+  
+  //int-- Starting from 100
+  echo mcache::getInstance()->decInt(100);
