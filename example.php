@@ -37,3 +37,5 @@
   echo mcache::getInstance()->decNum();
   echo mcache::getInstance()->getNum();
   
+  //int++ Starting from 100
+  echo mcache::getInstance()->incInt(100);
