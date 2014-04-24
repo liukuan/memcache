@@ -1,5 +1,6 @@
 memcache php class 
 ========
+```php
 <?php
 
   include 'mcache.php';
@@ -13,3 +14,4 @@ memcache php class
   }else echo $content;
   
 ?>
+```
