@@ -2,7 +2,7 @@
 class mcache extends Memcache
 {
 	public $def_host = 'localhost'; 
-	public $def_port = '12000';
+	public $def_port = '11211';
 	public function __construct($host = null,$port = null){
 		$host = isset($host)?$host:$this->def_host;
 		$port = isset($port)?$port:$this->def_port;
