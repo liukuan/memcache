@@ -12,7 +12,7 @@
   mcache::getInstance()->repFacebook($data_str);
   //delete
   mcache::getInstance()->delFacebook();
-  //hehe..
+  //hehe...
   //Settings page content
   $data = file_get_contents('http://www.facebook.com/?page=1');
   mcache::getInstance()->setFacebook($data,1);
