@@ -3,7 +3,7 @@ memcache php class
 ```php
 <?php
 
-  include 'mcache.php';;;;;//cccccc//haha???////adasdasd/5555
+  include 'mcache.php';;;;;//cccccc//haha???////adasdasd/5555/hahah
 
   if(!$content = mcache::getInstance()->getFacebook()){
   
